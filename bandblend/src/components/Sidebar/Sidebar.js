@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaHome, FaUser, FaCog } from 'react-icons/fa'; 
 
 const Sidebar = () => {
@@ -6,13 +7,19 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <FaHome /> <span className="sidebar-text">Home</span>
+          <Link to="/home">
+            <FaHome /> <span className="sidebar-text">Home</span>
+          </Link>
         </li>
         <li>
-          <FaUser /> <span className="sidebar-text">Profile</span>
+          <Link to="/profile">
+            <FaUser /> <span className="sidebar-text">Profile</span>
+          </Link>
         </li>
         <li>
-          <FaCog /> <span className="sidebar-text">Settings</span>
+          <Link to="/settings">
+            <FaCog /> <span className="sidebar-text">Settings</span>
+          </Link>
         </li>
       </ul>
     </div>
