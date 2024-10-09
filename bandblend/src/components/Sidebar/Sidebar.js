@@ -1,20 +1,22 @@
 import React from 'react';
-import './Sidebar.css'; 
+import { FaHome, FaUser, FaCog } from 'react-icons/fa'; 
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li><a href="/search">🔍 Search</a></li>
-        <li><a href="/profile">👤 Profile</a></li>
-        <li><a href="/messages">✉️ Messages</a></li>
-        <li><a href="/invitations">📩 Invitations</a></li>
-        <li><a href="/settings">⚙️ Settings</a></li>
-        <li><a href="/create-band">🎸 Create a Band</a></li>
-        <li><a href="/favourites">⭐ Favourites</a></li>
+        <li>
+          <FaHome /> <span className="sidebar-text">Home</span>
+        </li>
+        <li>
+          <FaUser /> <span className="sidebar-text">Profile</span>
+        </li>
+        <li>
+          <FaCog /> <span className="sidebar-text">Settings</span>
+        </li>
       </ul>
     </div>
   );
-}
+};
 
 export default Sidebar;
