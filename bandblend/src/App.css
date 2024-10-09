@@ -1,20 +1,34 @@
-.app {
-  display: flex;
+.sidebar {
+  background-color: #1c1c1e;
+  width: 200px;
   height: 100vh;
-  background-color: #121212;
-  color: white;
+  padding-top: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-content {
-  margin-left: 200px; 
-  padding: 40px;
-  flex-grow: 1;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
 }
 
-.main-content .auth-button {
-  text-align: center;
+.sidebar li {
+  margin: 20px 0;
 }
 
-.auth-button {
-  margin-top: 30px;
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px 0;
+  text-align: left; 
+  padding-left: 15px; 
+}
+
+.sidebar a:hover {
+  background-color: #333333;
+  border-radius: 5px;
 }
