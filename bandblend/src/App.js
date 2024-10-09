@@ -1,8 +1,8 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import AuthButton from './components/AuthButton';
-import './App.css'; 
+import Sidebar from './components/Sidebar/Sidebar'; 
+import Header from './components/Header/Header';
+import AuthButton from './components/AuthButton/AuthButton';
+import './App.css';
 
 function App() {
   return (
