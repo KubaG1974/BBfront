@@ -11,6 +11,10 @@ body {
     line-height: 1.5; 
 }
 
+a:hover {
+    color: crimson;
+}
+
 #root {
     height: 100vh; 
 }
