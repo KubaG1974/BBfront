@@ -1,0 +1,20 @@
+.header {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header span {
+  color: #e63946; 
+}
+
+.header p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #b5b5b5;
+}
