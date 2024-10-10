@@ -11,15 +11,15 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className = "app">
         <Sidebar />
-        <div className="main-content">
+        <div className = "main-content">
           <Header />
           <AuthButton />
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/settings" element={<Settings />} />
+            <Route path = "/home" element = {<Home />} />
+            <Route path = "/profile" element = {<Profile />} />
+            <Route path = "/settings" element = {<Settings />} />
           </Routes>
         </div>
       </div>
