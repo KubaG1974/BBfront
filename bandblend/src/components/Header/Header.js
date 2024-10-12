@@ -1,13 +1,16 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+const Header = ({ onToggleModal }) => {
   return (
-    <header className="header">
-      <h1>Welcome to <span>BAND BLENDER</span></h1>
+    <header className = "header">
+      <button className = "hamburger-btn" onClick = {onToggleModal}>
+        ☰
+      </button>
+      <h1>Header Title</h1>
       <p>Music tastes better together</p>
     </header>
   );
-}
+};
 
 export default Header;

@@ -1,21 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaUser, FaCog, FaBars } from 'react-icons/fa';
+import { FaHome, FaUser, FaCog } from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <div className = "sidebar">
-      <div className = "hamburger" onClick = {toggleMenu}>
-        <FaBars />
-      </div>
-      <ul className = {isOpen ? 'menu open' : 'menu'}>
+      <ul>
         <li>
           <Link to = "/home">
             <FaHome /> <span className = "sidebar-text">Home</span>
