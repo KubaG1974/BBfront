@@ -3,30 +3,27 @@ import { Link } from 'react-router-dom';
 import { FaHome, FaUser, FaCog } from 'react-icons/fa';
 import './ModalMenu.css';
 
-const ModalMenu = ({ onClose }) => {
+const ModalMenu = () => {
   return (
-    <div className = "modal">
       <div className = "modal-content">
-        <button className = "close-btn" onClick = {onClose}>X</button>
         <ul>
           <li>
-            <Link to = "/home" onClick = {onClose}>
-              <FaHome /> Home
+            <Link to = "/home">
+              <FaHome /> <span className = "sidebar-text">Home</span>
             </Link>
           </li>
           <li>
-            <Link to = "/profile" onClick = {onClose}>
-              <FaUser /> Profile
+            <Link to = "/profile">
+              <FaUser /> <span className = "sidebar-text">Profile</span>
             </Link>
           </li>
           <li>
-            <Link to = "/settings" onClick = {onClose}>
-              <FaCog /> Settings
+            <Link to = "/settings">
+              <FaCog /> <span className = "sidebar-text">Settings</span>
             </Link>
           </li>
         </ul>
       </div>
-    </div>
   );
 };
 

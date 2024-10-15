@@ -8,14 +8,12 @@
 
 .header h1 {
   font-size: 48px;
-  font-family: 'Roboto', sans-serif;
   color: #E63946;
   margin: 0 20px;
 }
 
 .header p {
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   margin: 0;
 }
@@ -26,19 +24,23 @@
   color: #fff;
   font-size: 24px;
   cursor: pointer;
-  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none; 
 }
 
 .hamburger-btn:hover {
-  color: #ddd;
+  color: #ab0909;
 }
 
 @media (max-width: 768px) {
   .header {
     width: 100%;
+    text-align: center;
   }
 
   .hamburger-btn {
-    display: block;
+    display: block; 
   }
 }

@@ -12,11 +12,11 @@
 }
 
 .modal-content {
-  background-color: #333;
+  /*background-color: #333;*/
   color: #fff;
-  padding: 20px;
+  padding: 5px 15px 15px 5px;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
   width: 80%;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .close-btn:hover {
-  color: #ddd;
+  color: #d91212;
 }
 
 .modal ul {
