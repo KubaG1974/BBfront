@@ -34,12 +34,14 @@
 }
 
 .modal ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .modal ul li {
-  margin: 15px 0;
+  margin: 0;
 }
 
 .modal ul li a {
@@ -50,4 +52,26 @@
 
 .modal ul li a:hover {
   color: #E63946;
+}
+
+.modal-text {
+  padding-left: 10px;
+}
+
+
+
+.login-btn, .logout-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  color: #ff0000;
 }
